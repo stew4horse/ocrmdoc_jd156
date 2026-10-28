@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stew4horse-ocrmdoc_jd156"
+version = "0.1.0"
+description = "从输入中抽取数值，计算OCR 文档理解工程师·SLO 违约的归因链路相关的比值与占比，分母为零时明确报错"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "stew4horse" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://stew4horse.github.io"
+Repository = "https://github.com/stew4horse/ocrmdoc_jd156"
+Issues = "https://github.com/stew4horse/ocrmdoc_jd156/issues"
+
+[project.scripts]
+ocrmdoc_jd156 = "ocrmdoc_jd156:main"
+
+[tool.setuptools]
+py-modules = ["ocrmdoc_jd156"]
